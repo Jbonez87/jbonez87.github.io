@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" width="40" height="40">
+  <circle vector-effect="non-scaling-stroke" r="1" fill="#B9B9B9" fill-opacity="100" transform="translate(4.082 9.388) scale(4.08163)"/>
+  <circle vector-effect="non-scaling-stroke" r="1" fill="#B9B9B9" fill-opacity="100" transform="matrix(4.08163 0 0 3.94558 20.136 30.748)"/>
+  <circle vector-effect="non-scaling-stroke" r="1" fill="#B9B9B9" fill-opacity="100" transform="translate(35.918 9.388) scale(4.08163)"/>
+  <path d="M4.626 13.255l12.79 15.18L7.126 12.11m15.46 16.325l13.332-15.18-2.898-1.146" fill="#B9B9B9" fill-opacity="100"/>
+</svg>
