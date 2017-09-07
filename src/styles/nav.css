@@ -1,0 +1,45 @@
+a {
+  outline: none;
+  color: rgb(0,203,203);
+  text-decoration: none;
+}
+
+a img, a img:hover {
+  border: none;
+}
+
+#menu {
+  float: right;
+  height: 100%;
+}
+
+#menu ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+#menu li {
+  float: left;
+  height: 146px;
+  width: 115px;
+  border-left: 1px solid rgb(24, 24, 24);
+  border-right: 1px solid rgb(7, 7, 7);
+}
+
+#menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(88,88,90);
+  font-family: 'Audiowide', cursive;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  height: 100%;
+  line-height: 105px;
+}
+
+/*Sub Menu*/
+#networks {
+  border-right: none;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import '../../styles/sub-nav.css';
+
 class SubNav extends Component {
   constructor() {
     super();

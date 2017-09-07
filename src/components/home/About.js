@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styles/about.css';
+
 // SVG imports
 import Mac from '../../images/about/jcbw.svg';
 import NYC from '../../images/about/nyc-rain.svg';
@@ -38,7 +40,7 @@ const About = () => {
         />
         <h2 className="presentation-title">Always Learning</h2>
         <p>
-          The main reason I decided to pursue a career in <span className="title">Tech</span> is that I never wanted to stop learning. <span className="title">Languages and Frameworks</span> change so quickly. There's always a newer, cleaner and more efficient way of writing <span className="title">Code.</span> My goal as a <span className="title">Developer</span> is to keep my skills fresh and my mind open. Thanks for reading!
+          The main reason I decided to pursue a career in <span className="title">Tech</span> is that I never wanted to stop learning. <span className="title">Languages and Frameworks</span> change very quickly so there's always a newer, cleaner and more efficient way of writing <span className="title">Code.</span> My goal as a <span className="title">Developer</span> is to keep my skills fresh and my mind open. Thanks for reading!
         </p>
       </div>
     </div>

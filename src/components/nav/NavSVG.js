@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import '../../styles/nav-svg.css';
+
 class NavSVG extends Component {
   constructor(props) {
     super(props);

@@ -1,0 +1,110 @@
+#networks {
+  border-right: none;
+}
+
+#menu ul li:hover, #menu .active {
+  background: rgb(0, 0, 0);
+}
+
+#menu ul li .sub {
+  display: none;
+  z-index: 9999;
+  position: relative;
+  overflow: hidden;
+  height: 508px;
+  top: 0px;
+}
+
+#menu ul li:hover ul.sub {
+  display: block;
+}
+
+#menu .sub:hover {
+	display: block;
+}
+
+#menu ul li ul li {
+  width: 50%;
+  height: 57px;
+  float: left;
+  background: rgb(11, 11, 11);
+  border: none;
+  border-top: 1px solid rgb(24, 24, 24);
+  border-bottom: 1px solid rgb(7, 7, 7);
+}
+
+li[data-link="container"], a[data-link="link"] {
+  cursor: url('../images/offwhite-pointer.svg'), auto;
+}
+
+#facebook {
+  background: url('../images/nav/fbicon.svg') center center no-repeat;
+  border-right: 1px solid rgb(18, 16, 19);
+	-moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#facebook:hover {
+	background: rgb(66,103,178) url('../images/nav/fbicon.svg') center center no-repeat;
+}
+
+#linkedin {
+  background: url('../images/nav/linkedin.svg') center center no-repeat;
+  border-left: 1px solid rgb(24, 24, 24);
+	-moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#linkedin:hover {
+  background: rgb(0, 119, 181) url('../images/nav/linkedin.svg') center center no-repeat;
+}
+
+#github {
+  background: url('../images/nav/octocat-white.svg') center center no-repeat;
+  border-right: 1px solid rgb(7, 7, 7);
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#github:hover {
+  background: rgb(255, 255, 255) url('../images/nav/octocat-black.svg') center center no-repeat;
+}
+
+#canva {
+  background: url('../images/nav/canva.svg') center center no-repeat;
+  border-left: 1px solid rgb(24, 24, 24);
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#canva:hover {
+  background: rgb(8, 182, 190) url('../images/nav/canva.svg') center center no-repeat;
+}
+
+#stackoverflow {
+  background: url('../images/nav/stackoverflow-normal.svg') center center no-repeat;
+  border-right: 1px solid rgb(7, 7, 7);
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#stackoverflow:hover {
+  background: rgb(215, 111, 15) url('../images/nav/stackoverflow-black.svg') center center no-repeat;
+}
+
+#instagram {
+  background: url('../images/nav/instagram-white.svg') center center no-repeat;
+  border-left: 1px solid rgb(24, 24, 24);
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#instagram:hover {
+  background: url('../images/nav/instagram-radial.svg') center center no-repeat;
+}

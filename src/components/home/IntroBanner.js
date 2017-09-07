@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styles/intro-banner.css';
+
 const IntroBanner = () => {
   return (
     <div>

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styles/header.css';
+
 // Component imports
 import Nav from './Nav';
 

@@ -1,0 +1,23 @@
+.scroll {
+  display: block;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+  border: none;
+  padding: 20px 0;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(85, 85, 85);
+  font-size: 15px;
+  overflow: hidden;
+  cursor: url('../images/black-pointer.svg') auto;
+  text-transform: uppercase;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.scroll:hover {
+  background: rgb(255, 255, 255) url('../images/footer/double-arrow-up.svg') center center no-repeat;
+  color: transparent;
+  cursor: url('../images/black-pointer.svg'), auto;
+}

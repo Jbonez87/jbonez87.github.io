@@ -1,0 +1,39 @@
+/*SVG's and animations*/
+#home-svg, #networks-svg, #projects-svg {
+  position: relative;
+  display: block;
+  bottom: -55px;
+  margin: auto;
+}
+
+#contact-svg {
+  position: relative;
+  display: block;
+  bottom: -50px;
+  margin: auto;
+}
+
+.open {
+  opacity: 0;
+}
+
+.open:hover {
+  opacity: 1;
+}
+
+.rotate:hover {
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
