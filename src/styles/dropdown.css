@@ -1,0 +1,64 @@
+.trigger {
+  background: rgb(0, 0, 0);
+  font-family: 'Orbitron', sans-serif;
+	border-radius: 5px;
+  text-align: center;
+	cursor: url('../images/black-pointer.svg'), auto;
+	display: block;
+	padding: 10px;
+  margin: 0 auto;
+	width: 300px;
+}
+
+.content {
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  background: rgb(0, 0, 0);
+  margin: 0 auto;
+	border-radius: 0 0 5px 5px;
+  text-align: center;
+	width: 300px;
+}
+
+.item {
+	padding: 10px;
+	transition: background .1s linear;
+  cursor: url('../images/black-pointer.svg'), auto;
+}
+.item:hover {
+		background: rgb(255,255,255);
+		cursor: url('../images/black-pointer.svg'), auto;
+	}
+
+.dropdown {
+	margin: 0 auto;
+  background: rgb(26, 26, 26);
+  height: 55px;
+	outline: none;
+  position: relative;
+	transition: box-shadow .1s linear;
+	width: 1180px;
+}
+
+.trigger:hover,
+.dropdown.active .trigger {
+  background: rgb(255,255,255);
+
+}
+
+.dropdown.active .trigger {
+  background: rgb(255,255,255);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.container {
+  background: rgb(26, 26, 26);
+	padding:25px 20px 11px;
+	margin: 0 auto;
+  width: 960px;
+}
+
+.form-container {
+  margin: 20px 0;
+}
