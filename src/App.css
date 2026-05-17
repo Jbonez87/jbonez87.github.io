@@ -1,0 +1,230 @@
+/*
+* CSS Reset Settings
+*/
+
+@layer reset {
+    /* --- Box model ------------------------------------------ */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* --- Remove default spacing ----------------------------- */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* --- Root defaults -------------------------------------- */
+    :root {
+        /* Respect user OS preference for dark/light */
+        color-scheme: light dark;
+
+        /* Prevent font size inflation on mobile landscape */
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    /* --- Document body -------------------------------------- */
+    body {
+        min-height: 100dvh; /* dynamic viewport: handles mobile browser chrome */
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    /* --- Media elements — block by default, responsive ------ */
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    /* --- SVG fill inherits color by default ----------------- */
+    svg {
+        fill: currentColor;
+    }
+
+    /* --- Form elements inherit font from body --------------- */
+    input,
+    button,
+    textarea,
+    select,
+    optgroup {
+        font: inherit;
+        color: inherit;
+        letter-spacing: inherit;
+    }
+
+    /* --- Remove default button styles ----------------------- */
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    /* --- Typography: sensible overflow ---------------------- */
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+
+    /* --- Headings: no bold by default (use base layer) ------ */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    /* --- Links --------------------------------------------- */
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    /* --- Lists --------------------------------------------- */
+    /* NOTE: Only remove list styles where role="list" is set.
+     VoiceOver + Safari strips list semantics without this. */
+    ul[role="list"],
+    ol[role="list"] {
+        list-style: none;
+    }
+
+    /* --- Tables -------------------------------------------- */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* --- Hidden attribute must hide things ----------------- */
+    [hidden] {
+        display: none !important;
+    }
+
+    /* --- Focus outline: respect user preference ------------ */
+    :focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 3px;
+    }
+
+    :focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    /* --- Reduced motion ------------------------------------ */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+
+    /* --- Scrollbar gutter — prevent layout shift ----------- */
+    html {
+        scrollbar-gutter: stable;
+    }
+
+    /* --- Text wrap balance for headings -------------------- */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-wrap: balance;
+    }
+
+    p {
+        text-wrap: pretty; /* avoids orphaned last words */
+    }
+} /* end @layer reset */
+
+/* ============================================================
+   BASE LAYER — your design tokens & global defaults go here
+   ============================================================ */
+
+@layer base {
+    :root {
+        /* --- Color tokens (customize to your palette) --------- */
+        --color-bg: #0f0f0f;
+        --color-surface: #1a1a1a;
+        --color-text: #f0ede8;
+        --color-muted: #888;
+        --color-accent: #c8ff57; /* swap this to your brand accent */
+        --color-border: rgba(255 255 255 / 0.1);
+
+        /* --- Typography tokens --------------------------------- */
+        --font-display: "Your Display Font", serif;
+        --font-body: "Your Body Font", sans-serif;
+        --font-mono: "Your Mono Font", monospace;
+
+        --font-size-sm: clamp(0.8rem, 1vw, 0.875rem);
+        --font-size-base: clamp(1rem, 1.2vw, 1.125rem);
+        --font-size-lg: clamp(1.25rem, 2vw, 1.5rem);
+        --font-size-xl: clamp(1.75rem, 4vw, 3rem);
+        --font-size-2xl: clamp(2.5rem, 7vw, 6rem);
+
+        --line-height-tight: 1.1;
+        --line-height-body: 1.6;
+
+        /* --- Spacing scale ------------------------------------- */
+        --space-xs: 0.25rem;
+        --space-sm: 0.5rem;
+        --space-md: 1rem;
+        --space-lg: 2rem;
+        --space-xl: 4rem;
+        --space-2xl: 8rem;
+
+        /* --- Layout -------------------------------------------- */
+        --max-width: 72rem;
+        --content-padding: clamp(1rem, 5vw, 3rem);
+
+        /* --- Motion -------------------------------------------- */
+        --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+        --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+        --duration-fast: 150ms;
+        --duration-base: 300ms;
+        --duration-slow: 600ms;
+    }
+
+    body {
+        font-family: var(--font-body);
+        font-size: var(--font-size-base);
+        line-height: var(--line-height-body);
+        background-color: var(--color-bg);
+        color: var(--color-text);
+    }
+} /* end @layer base */
+
+/* ============================================================
+   COMPONENTS & UTILITIES — declared here, defined elsewhere
+   ============================================================ */
+
+@layer components {
+}
+@layer utilities {
+}
+
+/*
+All modes
+*/
