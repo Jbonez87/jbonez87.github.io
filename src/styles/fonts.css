@@ -1,7 +1,7 @@
 /* Inter Variable Fonts */
 @font-face {
     font-family: "Inter";
-    src: url("/fonts/Inter-VariableFont.woff2") format("woff2");
+    src: url("../assets/fonts/Inter-VariableFont.woff2") format("woff2");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -10,9 +10,10 @@
 @font-face {
     font-family: "Inter";
     src:
-        url("Inter-Italic-VariableFont_slnt,wght.woff2")
+        url("../assets/fonts/Inter-Italic-VariableFont_slnt,wght.woff2")
             format("woff2-supports-variations"),
-        url("Inter-Italic-VariableFont_slnt,wght.woff2") format("woff2");
+        url("../assets/fonts/Inter-Italic-VariableFont_slnt,wght.woff2")
+            format("woff2");
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
@@ -21,7 +22,7 @@
 /* Space Mono Fonts */
 @font-face {
     font-family: "Space Mono";
-    src: url("/fonts/SpaceMono-Regular.woff2") format("woff2");
+    src: url("../assets/fonts/SpaceMono-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -29,7 +30,7 @@
 
 @font-face {
     font-family: "Space Mono";
-    src: url("/fonts/SpaceMono-Italic.woff2") format("woff2");
+    src: url("../assets/fonts/SpaceMono-Italic.woff2") format("woff2");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -37,7 +38,7 @@
 
 @font-face {
     font-family: "Space Mono";
-    src: url("/fonts/SpaceMono-Bold.woff2") format("woff2");
+    src: url("../assets/fonts/SpaceMono-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -45,7 +46,7 @@
 
 @font-face {
     font-family: "Space Mono";
-    src: url("/fonts/SpaceMono-BoldItalic.woff2") format("woff2");
+    src: url("../assets/fonts/SpaceMono-BoldItalic.woff2") format("woff2");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
