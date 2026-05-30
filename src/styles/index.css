@@ -1,4 +1,4 @@
-@import "./fonts/fonts.css" layer(base);
+@import "../assets/fonts/fonts.css" layer(base);
 
 @layer reset, base, components, utilities;
 
